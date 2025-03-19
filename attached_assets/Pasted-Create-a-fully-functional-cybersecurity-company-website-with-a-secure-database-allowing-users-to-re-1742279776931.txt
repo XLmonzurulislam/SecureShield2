@@ -1,0 +1,53 @@
+Create a fully functional cybersecurity company website with a secure database, allowing users to register, verify their phone number, place orders, and track their order progress. The website should include the following features:
+
+1. Homepage:
+A professional design reflecting trust and security.
+Overview of services like penetration testing, vulnerability assessments, malware removal, and more.
+Call-to-action buttons for registration, login, and booking services.
+2. User Registration & Login System:
+Secure user registration with phone number verification via OTP (One-Time Password).
+Login via email/phone number & password.
+Password reset functionality via email or OTP.
+Dashboard access after successful login.
+3. User Dashboard (Client Portal):
+Users can place orders for cybersecurity services.
+Order history section where users can view their past and current orders.
+Order status tracking (e.g., Pending, In Progress, Completed).
+Users can update their profile details.
+4. Service Order System:
+Users can select a service and place an order.
+Order details will be stored in the database.
+Users will receive an email and dashboard notification when their order status updates.
+5. Admin Panel:
+Secure admin login.
+View and manage all orders placed by users.
+Ability to change order status (e.g., Pending → In Progress → Completed).
+Manage users, delete suspicious accounts, and reset passwords.
+6. Database Structure:
+Users Table
+ID	Name	Email	Phone	Password (hashed)	Verified (Yes/No)
+1	John Doe	john@example.com	+880123456789	hashed_pass	Yes
+Orders Table
+Order ID	User ID	Service Name	Status	Created At	Updated At
+101	1	Penetration Testing	In Progress	2025-03-18	2025-03-19
+7. Security Features:
+SSL/TLS encryption for secure data transmission.
+Phone number verification via OTP for enhanced security.
+User authentication with hashed passwords and secure sessions.
+Rate limiting & CAPTCHA to prevent brute-force attacks.
+8. Blog Section (Optional):
+A blog page where the company can post cybersecurity news, tips, and updates.
+Users can comment and share posts.
+9. Mobile Responsive Design:
+The entire website should be responsive for desktop, tablet, and mobile users.
+10. Technologies to Use:
+Frontend: HTML5, CSS3, JavaScript (React/Vue/Bootstrap).
+Backend: Node.js (Express) / PHP (Laravel) / Python (Django).
+Database: MySQL / PostgreSQL / MongoDB.
+Authentication: Firebase, Twilio, or any OTP verification API.
+Security: JWT authentication, XSS & SQL injection protection.
+Additional Instructions:
+The order management system should be smooth, with a real-time update mechanism (using AJAX or WebSockets).
+Admin panel should be accessible only to authorized admins.
+Users should receive an email/SMS notification for every update in their order status.
+Website should load fast and be SEO optimized.
